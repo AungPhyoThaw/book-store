@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{layout/adminLayout :: main(~{::main})}" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<main role="main">
+    <div class="container my-5 mt-5">
+        <h3 class="text-center">Book Form</h3>
+        <form th:replace="fragments/book-form.html :: bookForm"></form>
+
+    </div>
+</main>
+
+</body>
+</html>

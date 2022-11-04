@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<div th:fragment="navigation">
+    <nav th:fragment="navigation" class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+        <a href="#" class="navbar-brand" th:href="@{/home}">
+            <i class="fas fa-book-reader fa-2x mx-3"></i>Book Store</a>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" th:href="@{/home}">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" th:href="@{/user/allbooks}">BOOKS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+</body>
+</html>

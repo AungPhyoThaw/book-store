@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+    <section th:fragment="userAllBooks">
+        <div class="row">
+            <div class="col-md-3 py-2" th:each="book : ${books}">
+                    <div class="card text-center">
+                        <img th:src="${book.imageUrl}" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title text-info mr-2 "th:text="${book.title}"></h3>
+                            <a href="#" class="btn btn-sm btn-outline-info mr-2"
+                            th:href="@{'/user/book-details?bookId='+${book.id}}">More Details</a>
+                            <a href="#" class="btn btn-sm btn-outline-info">Sign Up</a>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

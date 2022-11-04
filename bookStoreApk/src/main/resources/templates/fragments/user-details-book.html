@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+  <div th:fragment="bookDetails" class="row">
+      <div class="col-md-5">
+          <img th:src="${book.imageUrl}"class="img-fluid" alt="">
+      </div>
+      <div class="col-md-7">
+          <h2 class="" th:text="${book.title}"></h2>
+          <p class="lead" >The price : <span th:text="${book.price}"></span> &nbsp;$</p>
+
+      </div>
+  </div>
+</body>
+</html>

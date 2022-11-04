@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html th:replace="~{layout/userViewLayout :: userView(~{::main})}" lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<main role="main">
+    <div class="container my-5">
+            <div th:replace="fragments/cart-view.html :: cartView"></div>
+
+        <div>
+          <a href="#" th:href="@{/user/cart/clear}" class="btn btn-sm btn-outline-danger mr-2 mt-3">Clear</a>
+          <a href="#" th:href="@{/user/allbooks}" class="btn btn-sm btn-outline-info mr-2 mt-3">Back Home</a>
+          <a href="#" th:href="@{/user/cart/checkout}" class="btn btn-sm btn-outline-info mr-2 mt-3">Check Out</a>
+        </div>
+    </div>
+
+
+</main>
+
+</body>
+</html>
